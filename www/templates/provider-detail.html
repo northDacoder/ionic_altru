@@ -1,0 +1,31 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'firend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view title="{{provider.name}}">
+  	<ion-content has-header="true" padding="true">
+    	
+    	<div class="card" id="providerCard">
+  			<div class="item item-text-wrap">
+              <center><img ng-src="img/{{ provider.image }}" style="width: 150px; height: auto;"></center>  
+
+  			    <h3><strong>{{ provider.name }}</strong></h3>
+  				<p><strong>Specialties:</strong> {{ provider.specialty }}</p>
+    			<p><strong>Location:</strong> {{ provider.location }}</p>
+      			<p><strong><i class="icon ion-location"></i></strong> {{ provider.city }}</p>		
+  			</div>
+		</div>
+      	
+      	<div class="item item-button-right">
+    		<p>Call {{ provider.name }}'s Office</p>
+
+    		<button class="button button-balanced">
+      			<i class="icon ion-ios7-telephone"><a href="tel:+1{{ provider.phone }}"><i class="fa fa-phone"></i></a></i>
+    		</button>
+  		</div>
+
+  	</ion-content>
+</ion-view>
+
