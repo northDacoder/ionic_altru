@@ -6,8 +6,18 @@ ion-content {background: white;}
 .ion-ios7-people {color: white;}
 .ion-gear-b {color: white;}
 .ion-ios7-pulse-strong {color: white;}
+.ion-map {color: white;}
 
 span.tab-title {color: white;}
 
 label.item {background: #eee; border-radius: 8px; color: white;}
 
+#map {
+  width: 100%;
+  height:  100%;
+  z-index: 1000000;
+}
+
+.scroll {
+  height: 100%;
+}

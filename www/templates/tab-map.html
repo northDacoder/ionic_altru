@@ -1,10 +1,9 @@
-<ion-view title="Map">
+<!-- <ion-view title="Map">
   <ion-header-bar>
     <h1>Altru Hospital Map</h1>
   </ion-header-bar>
   <ion-content scroll="false" class="has-header">
   	
-    <!--Place Map Here-->
 
     <map on-create="mapCreated(map)"></map>
 
@@ -13,3 +12,15 @@
     <a ng-click="centerMe()" class="button button-icon icon ion-navigate"></a>
   </ion-footer-bar>
 </ion-view>
+ -->
+<ion-view ng-controller="MapCtrl">
+    <ion-header-bar class="bar-dark" >
+      <h1 class="title">Map</h1>
+    </ion-header-bar>
+    <ion-content>
+      <div id="map" data-tap-disabled="true"></div>
+    </ion-content>
+    <ion-footer-bar class="bar-dark">
+      <a ng-click="centerOnMe()" class="button button-icon icon ion-navigate">Find Me</a>
+    </ion-footer-bar>
+  </ion-view>

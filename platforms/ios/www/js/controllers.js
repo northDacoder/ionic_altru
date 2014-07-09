@@ -14,6 +14,7 @@ angular.module('starter.controllers', [])
 .controller('AccountCtrl', function($scope) {
 })
 
-
 .controller('MapCtrl', function($scope) {
 });
+
+
